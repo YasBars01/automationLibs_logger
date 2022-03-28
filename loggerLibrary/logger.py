@@ -44,6 +44,8 @@ class Logger:
         self.set_logger_name = set_logger_name
         self.LOG_DIR = os.path.join(self.base_dir, 'logs', datetime.today().strftime('%Y'),
                                     datetime.today().strftime('%B'))
+        self.with_milliseconds = True
+
         self.logger = self.make_logger()
 
     def make_logger(self):
@@ -58,7 +60,12 @@ class Logger:
         else:
             logger = logging.getLogger(__name__)
         logger.setLevel(logging.DEBUG)
-        formatter = logging.Formatter('[%(asctime)s] : [%(levelname)s] : [%(pathname)s:%(lineno)d] : %(message)s;')
+
+        if self.with_milliseconds:
+            formatter = logging.Formatter('[%(asctime)s] : [%(levelname)s] : [%(pathname)s:%(lineno)d] : %(message)s;')
+        else:
+            formatter = logging.Formatter('[%(asctime)s] : [%(levelname)s] : [%(pathname)s:%(lineno)d] : %(message)s;',
+                                          '%Y-%m-%d %H:%M:%S')
 
         file_handler = logging.FileHandler(self.LOG_DIR)
         file_handler.setFormatter(formatter)
@@ -76,7 +83,3 @@ class Logger:
         logger.addHandler(ch)
 
         return logger
-
-
-
-
