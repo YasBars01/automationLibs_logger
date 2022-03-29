@@ -16,7 +16,7 @@ Here is a list of other libraries:
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install automationLibs like below. 
 Rerun this command to check for and install  updates .
 ```bash
-pip install -e git+https://gitlab.com/blaise.cosico/automation_team_libraries#egg=automationLibs
+pip install -e git+https://yasmin.barrientos/automationLibs_logger#egg=automationLibs_logger
 ```
 
 ## Usage
