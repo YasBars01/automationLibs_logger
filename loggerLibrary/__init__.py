@@ -1,2 +1,2 @@
-from logger import Logger
-from old_logger import OldLogger
+from loggerLibrary.logger import Logger
+from loggerLibrary.old_logger import OldLogger
