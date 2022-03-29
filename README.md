@@ -1,8 +1,8 @@
 # automationLibs_logger Library
 
-automationLibs is a collection of Python packages that are created by ISG's Automation Squad.
-automationLibs aims to create boilerplate functions that will allow you to start coding immediately.
-Here is a list of other libraries:
+automationLibs is a collection of Python packages that are created by ISG's Automation Squad. automationLibs aims to
+create boilerplate functions that will allow you to start coding immediately. Here is a list of other libraries:
+
 * [automationLibs_logger Library][1] - Logger Library
 * automationLibs_Gdrive Library - GDrive and GSheet helper Library
 * automationLibs_PyAutoGUI Library - PyAutoGUI related Library
@@ -13,22 +13,38 @@ Here is a list of other libraries:
 [1]:https://gitlab.com/yasmin.barrientos/automationLibs_logger
 
 ## Installation and updating
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install automationLibs like below. 
-Rerun this command to check for and install  updates .
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install automationLibs like below. Rerun this command
+to check for and install updates .
+
 ```bash
 pip install -e git+https://yasmin.barrientos/automationLibs_logger#egg=automationLibs_logger
 ```
 
+To install a specific branch
+
+```bash
+pip install -e git+https://gitlab.com/yasmin.barrientos/automationLibs_logger.git@dev-ver01#egg=automationlibs-logger
+```
+
+To install inside site-packages
+
+```bash
+pip install git+https://gitlab.com/yasmin.barrientos/automationLibs_logger.git@dev-ver01
+```
+
 ## Usage
+
 Features:
-Install this package to use a pre-formatted logger 
+Install this package to use a pre-formatted logger
 
 ##### Logger
-* Logger(LOG_NAME_ID).logger
-  * instantiates and creates the logger
 
+* Logger(LOG_NAME_ID).logger
+    * instantiates and creates the logger
 
 #### Demo of logger:
+
 ```python
 from loggerLibrary.logger import Logger
 import getpass
@@ -39,19 +55,23 @@ logger = Logger(LOG_NAME_ID).logger
 logger.info('test info')
 logger.error('test info')
 ```
-Result in PyCharm Terminal: 
+
+Result in PyCharm Terminal:
+
 ```
 [2022-03-28 17:56:30] : [INFO] : [C:\DEV\PYTHON\PycharmProjects\loggerLibrary\tests\test_logger.py:9] : test info;
 [2022-03-28 17:56:30] : [ERROR] : [C:\DEV\PYTHON\PycharmProjects\loggerLibrary\tests\test_logger.py:10] : test info;
 ```
-Result in Log File: 
+
+Result in Log File:
+
 ```log
 [2022-03-28 17:56:30] : [INFO] : [C:\DEV\PYTHON\PycharmProjects\loggerLibrary\tests\test_logger.py:9] : test info;
 [2022-03-28 17:56:30] : [ERROR] : [C:\DEV\PYTHON\PycharmProjects\loggerLibrary\tests\test_logger.py:10] : test info;
 ```
 
-
 #### Demo of Old Logger:
+
 ```python
 from loggerLibrary.old_logger import OldLogger
 import getpass
@@ -63,16 +83,21 @@ logger2.info('test info')
 logger2.error('test info')
 
 ```
-Result in PyCharm Terminal: 
+
+Result in PyCharm Terminal:
+
 ```log
 [2022-03-28 17:56:30]: [INFO]: [test_logger.py:14] : test info;
 [2022-03-28 17:56:30]: [ERROR]: [test_logger.py:15] : test info;
 ```
-Result in Log File: 
+
+Result in Log File:
+
 ```log
 [2022-03-28 17:56:30]: [INFO]: [C:\DEV\PYTHON\PycharmProjects\loggerLibrary\tests\test_logger.py:14] : test info;
 [2022-03-28 17:56:30]: [ERROR]: [C:\DEV\PYTHON\PycharmProjects\loggerLibrary\tests\test_logger.py:15] : test info;
 ```
 
 ## License
+
 [MIT](https://choosealicense.com/licenses/mit/)
