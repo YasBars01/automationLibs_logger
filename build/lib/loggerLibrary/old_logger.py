@@ -52,7 +52,7 @@ class OldLogger:
 
         # log format in PyCharm terminal
         # for more formats, check here: https://docs.python.org/3/library/logging.html#logrecord-attributes
-        formatter = logging.Formatter('[%(asctime)s]: [%(levelname)s]: [%(filename)s:%(lineno)d] : %(message)s;',
+        formatter = logging.Formatter('[%(asctime)s]: [%(levelname)s]: [%(pathname)s:%(lineno)d] : %(message)s;',
                                       '%Y-%m-%d %H:%M:%S')
 
         # add formatter to ch

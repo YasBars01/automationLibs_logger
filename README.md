@@ -14,7 +14,14 @@ create boilerplate functions that will allow you to start coding immediately. He
 
 ## Installation and updating
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install automationLibs like below. Rerun this command
+1. Create a .ENV in your root folder
+2. Add full path where you would like the logs to be created(could be anywhere:
+```dotenv
+#*** automationLibs_logger ***#
+LOG_BASE_DIR="C:\\Users\\my_machine\\PycharmProjects\\my_project\\logs"
+```
+
+3. Use the package manager [pip](https://pip.pypa.io/en/stable/) to install automationLibs like below. Rerun this command
 to check for and install updates .
 
 ```bash
@@ -25,12 +32,6 @@ To install a specific branch
 
 ```bash
 pip install -e git+https://gitlab.com/yasmin.barrientos/automationLibs_logger.git@dev-ver01#egg=automationlibs-logger
-```
-
-To install inside site-packages
-
-```bash
-pip install git+https://gitlab.com/yasmin.barrientos/automationLibs_logger.git@dev-ver01
 ```
 
 ## Usage
@@ -97,6 +98,9 @@ Result in Log File:
 [2022-03-28 17:56:30]: [INFO]: [C:\DEV\PYTHON\PycharmProjects\loggerLibrary\tests\test_logger.py:14] : test info;
 [2022-03-28 17:56:30]: [ERROR]: [C:\DEV\PYTHON\PycharmProjects\loggerLibrary\tests\test_logger.py:15] : test info;
 ```
+
+## Log Format
+For more log formats, check here: https://docs.python.org/3/library/logging.html#logrecord-attributes
 
 ## License
 
