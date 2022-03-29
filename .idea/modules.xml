@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/loggerLibrary.iml" filepath="$PROJECT_DIR$/.idea/loggerLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/automationLibs_logger.iml" filepath="$PROJECT_DIR$/.idea/automationLibs_logger.iml" />
     </modules>
   </component>
 </project>
