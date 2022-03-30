@@ -61,6 +61,7 @@ class Logger:
             logger = logging.getLogger(__name__)
         logger.setLevel(logging.DEBUG)
 
+        # log format: for more formats, check here: https://docs.python.org/3/library/logging.html#logrecord-attributes
         if self.with_milliseconds:
             formatter = logging.Formatter('[%(asctime)s] : [%(levelname)s] : [%(pathname)s:%(lineno)d] : %(message)s;')
         else:

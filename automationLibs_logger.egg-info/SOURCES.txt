@@ -4,6 +4,7 @@ setup.py
 automationLibs_logger.egg-info/PKG-INFO
 automationLibs_logger.egg-info/SOURCES.txt
 automationLibs_logger.egg-info/dependency_links.txt
+automationLibs_logger.egg-info/requires.txt
 automationLibs_logger.egg-info/top_level.txt
 loggerLibrary/__init__.py
 loggerLibrary/log_config.py

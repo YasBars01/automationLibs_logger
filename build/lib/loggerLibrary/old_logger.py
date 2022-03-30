@@ -21,7 +21,9 @@ class OldLogger:
         if log_dir == 1 or log_dir is None:
             self.LOG_DIR = os.path.join(self.base_dir, 'logs')
         elif log_dir == 2:
-            self.LOG_DIR = os.path.join(self.base_dir, 'logs', datetime.today().strftime('%Y'),
+            self.LOG_DIR = os.path.join(self.base_dir,
+                                        'logs',
+                                        datetime.today().strftime('%Y'),
                                         datetime.today().strftime('%B'))
         else:
             self.LOG_DIR = log_dir
