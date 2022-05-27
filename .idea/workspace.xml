@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4e99c441-9f8d-4ec9-917c-448f349a8d00" name="Changes" comment="Rebuilt after update&#10;updated README.md - LOG_BASE_DIR changed from&#10;&quot;C:\\Users\\my_machine\\PycharmProjects\\my_project\\logs&quot;&#10;to &quot;C:\\Users\\my_machine\\PycharmProjects\\my_project&quot;" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="yas-globe &lt;yasmin.barrientos@globe.com.ph&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="dev-ver01" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="4" />
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1653629732" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="dev-ver01" />
+                    <option name="lastUsedInstant" value="1648540601" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="272mWxipLuBrU9aL0g3hRNdLDqa" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4e99c441-9f8d-4ec9-917c-448f349a8d00" name="Changes" comment="" />
+      <created>1648526590769</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1648526590769</updated>
+    </task>
+    <task id="LOCAL-00001" summary="merged main and dev-ver01 using&#10;git pull origin main --allow-unrelated-histories">
+      <created>1648526840264</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1648526840264</updated>
+    </task>
+    <task id="LOCAL-00002" summary="merged main and dev-ver01 using&#10;git pull origin main --allow-unrelated-histories">
+      <created>1648535286916</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1648535286916</updated>
+    </task>
+    <task id="LOCAL-00003" summary="built the package using: &#10;python setup.py sdist bdist_wheel">
+      <created>1648537117296</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1648537117296</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Fixed init&#10;previous value was returning ModuleNotFoundError">
+      <created>1648540746396</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1648540746396</updated>
+    </task>
+    <task id="LOCAL-00005" summary="re-built the package using: &#10;python setup.py sdist bdist_wheel">
+      <created>1648548796476</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1648548796477</updated>
+    </task>
+    <task id="LOCAL-00006" summary="- re-built the package&#10;- updated logger comments&#10;- updated __init__.py to use .env file&#10;- updated README.md - updated version and install_requires">
+      <created>1648551443168</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1648551443168</updated>
+    </task>
+    <task id="LOCAL-00007" summary="old_logger.py - made the Pycharm console and log identical">
+      <created>1648552186885</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1648552186885</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Rebuilt after update&#10;old_logger.py - made the Pycharm console and log identical">
+      <created>1648599241133</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1648599241133</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Rebuilt after update&#10;old_logger.py - made the Pycharm console and log identical">
+      <created>1648599615023</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1648599615023</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Rebuilt after update&#10;updated README.md - LOG_BASE_DIR changed from&#10;&quot;C:\\Users\\my_machine\\PycharmProjects\\my_project\\logs&quot;&#10;to &quot;C:\\Users\\my_machine\\PycharmProjects\\my_project&quot;">
+      <created>1649215411064</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1649215411064</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="merged main and dev-ver01 using&#10;git pull origin main --allow-unrelated-histories" />
+    <MESSAGE value="built the package using: &#10;python setup.py sdist bdist_wheel" />
+    <MESSAGE value="Fixed init&#10;previous value was returning ModuleNotFoundError" />
+    <MESSAGE value="re-built the package using: &#10;python setup.py sdist bdist_wheel" />
+    <MESSAGE value="- re-built the package&#10;- updated logger comments&#10;- updated __init__.py to use .env file&#10;- updated README.md - updated version and install_requires" />
+    <MESSAGE value="old_logger.py - made the Pycharm console and log identical" />
+    <MESSAGE value="Rebuilt after update&#10;old_logger.py - made the Pycharm console and log identical" />
+    <MESSAGE value="Rebuilt after update&#10;updated README.md - LOG_BASE_DIR changed from&#10;&quot;C:\\Users\\my_machine\\PycharmProjects\\my_project\\logs&quot;&#10;to &quot;C:\\Users\\my_machine\\PycharmProjects\\my_project&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rebuilt after update&#10;updated README.md - LOG_BASE_DIR changed from&#10;&quot;C:\\Users\\my_machine\\PycharmProjects\\my_project\\logs&quot;&#10;to &quot;C:\\Users\\my_machine\\PycharmProjects\\my_project&quot;" />
+  </component>
+</project>
