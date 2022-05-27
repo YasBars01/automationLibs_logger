@@ -1,3 +1,24 @@
+Metadata-Version: 2.1
+Name: automationLibs-logger
+Version: 0.0.2
+Summary: Automation Team Library of reusable codes - Logger Library
+Home-page: https://gitlab.com/yasmin.barrientos/automationLibs_logger
+Author: Yas Barrientos
+Author-email: yasmin.barrientos@globe.com.ph
+License: MIT
+Download-URL: https://gitlab.com/yasmin.barrientos/automationLibs_logger/-/archive/main/automationLibs_logger-main.zip
+Keywords: python,automationLibs,logger,automationLibs_logger
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Documentation
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
 # automationLibs_logger Library
 
 automationLibs is a collection of Python packages that are created by ISG's Automation Squad. automationLibs aims to
@@ -129,3 +150,5 @@ For more log formats, check here: https://docs.python.org/3/library/logging.html
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
+
+
