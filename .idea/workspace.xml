@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e99c441-9f8d-4ec9-917c-448f349a8d00" name="Changes" comment="* merged dev and main. &#10;* run build">
-      <changelist_data name="yas-globe" email="yasmin.barrientos@globe.com.ph" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
+    <list default="true" id="4e99c441-9f8d-4ec9-917c-448f349a8d00" name="Changes" comment="* updated readme.md - updated installation instructions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,6 +24,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SIGN_OFF_COMMIT" value="true" />
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
@@ -158,7 +156,28 @@
       <option name="project" value="LOCAL" />
       <updated>1656314345534</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="* merged dev and main. &#10;* run build&#10;* requirements.txt - added">
+      <created>1656314587201</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1656314587201</updated>
+    </task>
+    <task id="LOCAL-00013" summary="* merged dev and main. &#10;* run build&#10;* requirements.txt - added">
+      <created>1656314592804</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1656314592804</updated>
+    </task>
+    <task id="LOCAL-00014" summary="* updated readme.md - updated installation instructions">
+      <created>1656314795437</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1656314795437</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -184,6 +203,8 @@
     <MESSAGE value="Rebuilt after update&#10;old_logger.py - made the Pycharm console and log identical" />
     <MESSAGE value="Rebuilt after update&#10;updated README.md - LOG_BASE_DIR changed from&#10;&quot;C:\\Users\\my_machine\\PycharmProjects\\my_project\\logs&quot;&#10;to &quot;C:\\Users\\my_machine\\PycharmProjects\\my_project&quot;" />
     <MESSAGE value="* merged dev and main. &#10;* run build" />
-    <option name="LAST_COMMIT_MESSAGE" value="* merged dev and main. &#10;* run build" />
+    <MESSAGE value="* merged dev and main. &#10;* run build&#10;* requirements.txt - added" />
+    <MESSAGE value="* updated readme.md - updated installation instructions" />
+    <option name="LAST_COMMIT_MESSAGE" value="* updated readme.md - updated installation instructions" />
   </component>
 </project>

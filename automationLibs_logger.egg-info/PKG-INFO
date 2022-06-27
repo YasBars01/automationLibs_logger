@@ -38,7 +38,8 @@ create boilerplate functions that will allow you to start coding immediately. He
 to check for and install updates .
 
 ```bash
-pip install -e git+https://yasmin.barrientos/automationLibs_logger#egg=automationLibs_logger
+pip install -e git+https://gitlab.com/yasmin.barrientos/automationLibs_logger#egg=automationLibs_logger
+
 ```
 
 To install a specific branch
