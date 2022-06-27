@@ -2,7 +2,6 @@ venv
 venv/
 .DS_Store
 __pycache__
-requirements.txt
 tests
 logs/
 
