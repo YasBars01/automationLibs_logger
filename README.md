@@ -64,7 +64,8 @@ from loggerLibrary.logger import Logger
 import getpass
 
 LOG_NAME_ID = f'loggerLibrarytest_{getpass.getuser()}'
-logger = Logger(LOG_NAME_ID).logger
+LOG_DIR = f'C:\\my_project\\'
+logger = Logger(log_dir=LOG_DIR, log_id=LOG_NAME_ID).logger
 
 logger.info('test info')
 logger.error('test info')
