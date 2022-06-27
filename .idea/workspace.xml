@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e99c441-9f8d-4ec9-917c-448f349a8d00" name="Changes" comment="Rebuilt after update&#10;updated README.md - LOG_BASE_DIR changed from&#10;&quot;C:\\Users\\my_machine\\PycharmProjects\\my_project\\logs&quot;&#10;to &quot;C:\\Users\\my_machine\\PycharmProjects\\my_project&quot;">
+    <list default="true" id="4e99c441-9f8d-4ec9-917c-448f349a8d00" name="Changes" comment="* merged dev and main. &#10;* run build">
+      <changelist_data name="yas-globe" email="yasmin.barrientos@globe.com.ph" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/automationLibs_logger.egg-info/PKG-INFO" beforeDir="false" afterPath="$PROJECT_DIR$/automationLibs_logger.egg-info/PKG-INFO" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/automationLibs_logger.egg-info/SOURCES.txt" beforeDir="false" afterPath="$PROJECT_DIR$/automationLibs_logger.egg-info/SOURCES.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/automationLibs_logger.egg-info/dependency_links.txt" beforeDir="false" afterPath="$PROJECT_DIR$/automationLibs_logger.egg-info/dependency_links.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/automationLibs_logger.egg-info/requires.txt" beforeDir="false" afterPath="$PROJECT_DIR$/automationLibs_logger.egg-info/requires.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/automationLibs_logger.egg-info/top_level.txt" beforeDir="false" afterPath="$PROJECT_DIR$/automationLibs_logger.egg-info/top_level.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/automationLibs_logger-0.0.2-py3-none-any.whl" beforeDir="false" afterPath="$PROJECT_DIR$/dist/automationLibs_logger-0.0.2-py3-none-any.whl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/automationLibs_logger-0.0.2.tar.gz" beforeDir="false" afterPath="$PROJECT_DIR$/dist/automationLibs_logger-0.0.2.tar.gz" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +70,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Confirmation" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -155,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649215411064</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="* merged dev and main. &#10;* run build">
+      <created>1656314345534</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1656314345534</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -180,6 +183,7 @@
     <MESSAGE value="old_logger.py - made the Pycharm console and log identical" />
     <MESSAGE value="Rebuilt after update&#10;old_logger.py - made the Pycharm console and log identical" />
     <MESSAGE value="Rebuilt after update&#10;updated README.md - LOG_BASE_DIR changed from&#10;&quot;C:\\Users\\my_machine\\PycharmProjects\\my_project\\logs&quot;&#10;to &quot;C:\\Users\\my_machine\\PycharmProjects\\my_project&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rebuilt after update&#10;updated README.md - LOG_BASE_DIR changed from&#10;&quot;C:\\Users\\my_machine\\PycharmProjects\\my_project\\logs&quot;&#10;to &quot;C:\\Users\\my_machine\\PycharmProjects\\my_project&quot;" />
+    <MESSAGE value="* merged dev and main. &#10;* run build" />
+    <option name="LAST_COMMIT_MESSAGE" value="* merged dev and main. &#10;* run build" />
   </component>
 </project>
