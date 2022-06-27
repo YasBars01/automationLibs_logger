@@ -41,7 +41,6 @@ class Logger:
 
     def __init__(self, log_dir, log_id, set_logger_name: bool = False) -> None:
         self.base_dir = log_dir or os.environ.get('LOG_BASE_DIR') or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-        print(self.base_dir)
         self.log_id = log_id
         self.set_logger_name = set_logger_name
         self.LOG_DIR = os.path.join(self.base_dir, 'logs', datetime.today().strftime('%Y'),

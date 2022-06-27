@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name='automationLibs_logger',
-    version='0.0.2',
+    version='0.0.3',
     author='Yas Barrientos',
     author_email='yasmin.barrientos@globe.com.ph',
     description='Automation Team Library of reusable codes - Logger Library',
