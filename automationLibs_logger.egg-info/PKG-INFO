@@ -3,12 +3,11 @@ Name: automationLibs-logger
 Version: 0.0.2
 Summary: Automation Team Library of reusable codes - Logger Library
 Home-page: https://gitlab.com/yasmin.barrientos/automationLibs_logger
+Download-URL: https://gitlab.com/yasmin.barrientos/automationLibs_logger/-/archive/main/automationLibs_logger-main.zip
 Author: Yas Barrientos
 Author-email: yasmin.barrientos@globe.com.ph
 License: MIT
-Download-URL: https://gitlab.com/yasmin.barrientos/automationLibs_logger/-/archive/main/automationLibs_logger-main.zip
 Keywords: python,automationLibs,logger,automationLibs_logger
-Platform: UNKNOWN
 Classifier: Intended Audience :: Developers
 Classifier: Topic :: Software Development :: Documentation
 Classifier: License :: OSI Approved :: MIT License
@@ -150,5 +149,3 @@ For more log formats, check here: https://docs.python.org/3/library/logging.html
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
-
-
