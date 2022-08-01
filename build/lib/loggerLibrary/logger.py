@@ -2,6 +2,7 @@ import pathlib
 import logging
 import os
 from datetime import datetime
+import sys
 
 
 class ContextFilter(logging.Filter):
@@ -39,13 +40,15 @@ class Logger:
         logger_b.info("Hi")
     """
 
-    def __init__(self, log_dir, log_id, set_logger_name: bool = False) -> None:
-        self.base_dir = log_dir or os.environ.get('LOG_BASE_DIR') or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    def __init__(self, log_dir, log_id, set_logger_name: bool = False, enable_stdout: bool = False) -> None:
+        self.base_dir = log_dir or os.environ.get('LOG_BASE_DIR') or os.path.dirname(
+            os.path.dirname(os.path.abspath(__file__))) + '\\logs\\'
         self.log_id = log_id
         self.set_logger_name = set_logger_name
-        self.LOG_DIR = os.path.join(self.base_dir, 'logs', datetime.today().strftime('%Y'),
+        self.LOG_DIR = os.path.join(self.base_dir, datetime.today().strftime('%Y'),
                                     datetime.today().strftime('%B'))
         self.with_milliseconds = True
+        self.enable_stdout = enable_stdout
 
         self.logger = self.make_logger()
 
@@ -60,7 +63,7 @@ class Logger:
                 raise
 
         self.LOG_DIR = os.path.join(self.LOG_DIR,
-                                    self.log_id + '_log_' + datetime.today().strftime('%Y-%m-%d') + '.log')
+                                    self.log_id + '_' + datetime.today().strftime('%Y-%m-%d') + '.log')
 
         if self.set_logger_name:
             logger = logging.getLogger(self.log_id)
@@ -71,17 +74,24 @@ class Logger:
         # log format: for more formats, check here: https://docs.python.org/3/library/logging.html#logrecord-attributes
         if self.with_milliseconds:
             formatter = logging.Formatter('[%(asctime)s] : [%(levelname)s] : [%(pathname)s:%(lineno)d] : %(message)s;')
+
         else:
             formatter = logging.Formatter('[%(asctime)s] : [%(levelname)s] : [%(pathname)s:%(lineno)d] : %(message)s;',
                                           '%Y-%m-%d %H:%M:%S')
 
+        # create console handler, for console/terminal log
+        if self.enable_stdout:
+            ch = logging.StreamHandler(sys.stdout)
+        else:
+            ch = logging.StreamHandler()
+
+        # create file handler, for file log
         file_handler = logging.FileHandler(self.LOG_DIR)
         file_handler.setFormatter(formatter)
         logger.addHandler(file_handler)
         logger.addFilter(ContextFilter())
 
-        # create console handler and set level to debug
-        ch = logging.StreamHandler()
+        # Console Handler, set level to debug
         ch.setLevel(logging.DEBUG)
 
         # add formatter to ch

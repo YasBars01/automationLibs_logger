@@ -1,11 +1,12 @@
 import pathlib
 import logging
 import os
+import sys
 from datetime import datetime
 
 
 class OldLogger:
-    def __init__(self, log_dir=1, log_name_id=None):
+    def __init__(self, log_dir=1, log_name_id=None, enable_stdout: bool = False):
         """
         For reference: https://docs.python.org/3/library/logging.html
         :param log_dir: Complete folder location, where the log file will be created. If 1 or None: Logs will be created
@@ -35,6 +36,8 @@ class OldLogger:
             self.LOG_DIR = os.path.join(self.LOG_DIR,
                                         log_name_id + '_log_' + datetime.today().strftime('%Y-%m-%d') + '.log')
 
+        self.enable_stdout = enable_stdout
+
     def logger(self):
         # log format in log file
         # for more formats, check here: https://docs.python.org/3/library/logging.html#logrecord-attributes
@@ -48,8 +51,12 @@ class OldLogger:
         logger = logging.getLogger(self.LOG_DIR)
         logger.setLevel(logging.DEBUG)
 
-        # create console handler and set level to debug
-        ch = logging.StreamHandler()
+        # create console handler, for console/terminal log
+        if self.enable_stdout:
+            ch = logging.StreamHandler(sys.stdout)
+        else:
+            ch = logging.StreamHandler()
+
         ch.setLevel(logging.DEBUG)
 
         # log format in PyCharm terminal

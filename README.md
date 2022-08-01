@@ -14,8 +14,13 @@ create boilerplate functions that will allow you to start coding immediately. He
 
 # Installation and updating
 
-1. Use the package manager [pip](https://pip.pypa.io/en/stable/) to install automationLibs like below. Rerun this command
-to check for and install updates .
+1. Use the package manager [pip](https://pip.pypa.io/en/stable/) to install automationLibs like below. Rerun this
+   command to check for and install updates .
+
+```bash
+pip install git+https://gitlab.com/yasmin.barrientos/automationLibs_logger.git
+
+```
 
 ```bash
 pip install -e git+https://gitlab.com/yasmin.barrientos/automationLibs_logger#egg=automationLibs_logger
@@ -64,8 +69,44 @@ from loggerLibrary.logger import Logger
 import getpass
 
 LOG_NAME_ID = f'loggerLibrarytest_{getpass.getuser()}'
-LOG_DIR = f'C:\\my_project\\'
+LOG_DIR = f'C:\\my_project\\logs\\'
 logger = Logger(log_dir=LOG_DIR, log_id=LOG_NAME_ID).logger
+
+logger.info('test info')
+logger.error('test error')
+logger.warning('test warning')
+```
+
+File will be located in:
+`C:\my_project\logs\<year>\<month>\<LOG_NAME_ID>_<YYYY-MM-dd>.log`
+
+e.g. `C:\my_project\logs\2022\August\loggerLibrarytest_barri_2022-08-01.log`
+
+Result in PyCharm Terminal:
+
+```log
+[2022-08-01 15:32:45,480] : [INFO] : [D:\DEV\PYTHON\automationLibs_logger\tests\test_logging.py:8] : test info;
+[2022-08-01 15:32:45,480] : [ERROR] : [D:\DEV\PYTHON\automationLibs_logger\tests\test_logging.py:9] : test error;
+[2022-08-01 15:32:45,480] : [WARNING] : [D:\DEV\PYTHON\automationLibs_logger\tests\test_logging.py:10] : test warning;
+```
+
+Result in Log File:
+
+```log
+[2022-08-01 15:32:45,480] : [INFO] : [D:\DEV\PYTHON\automationLibs_logger\tests\test_logging.py:8] : test info;
+[2022-08-01 15:32:45,480] : [ERROR] : [D:\DEV\PYTHON\automationLibs_logger\tests\test_logging.py:9] : test error;
+[2022-08-01 15:32:45,480] : [WARNING] : [D:\DEV\PYTHON\automationLibs_logger\tests\test_logging.py:10] : test warning;
+```
+
+#### Demo of logger with stdout:
+
+```python
+from loggerLibrary.logger import Logger
+import getpass
+
+LOG_NAME_ID = f'loggerLibrarytest_{getpass.getuser()}'
+LOG_DIR = f'C:\\my_project\\logs\\'
+logger = Logger(log_dir=LOG_DIR, log_id=LOG_NAME_ID, enable_stdout=True).logger
 
 logger.info('test info')
 logger.error('test info')
@@ -74,15 +115,17 @@ logger.error('test info')
 Result in PyCharm Terminal:
 
 ```log
-[2022-03-28 17:56:30] : [INFO] : [C:\DEV\PYTHON\PycharmProjects\loggerLibrary\tests\test_logger.py:9] : test info;
-[2022-03-28 17:56:30] : [ERROR] : [C:\DEV\PYTHON\PycharmProjects\loggerLibrary\tests\test_logger.py:10] : test info;
+[2022-08-01 15:48:39,076] : [INFO] : [D:/DEV/PYTHON/automationLibs_logger/tests/test_logging.py:16] : test info;
+[2022-08-01 15:48:39,078] : [ERROR] : [D:/DEV/PYTHON/automationLibs_logger/tests/test_logging.py:17] : test error;
+[2022-08-01 15:48:39,078] : [WARNING] : [D:/DEV/PYTHON/automationLibs_logger/tests/test_logging.py:18] : test warning;
 ```
 
 Result in Log File:
 
 ```log
-[2022-03-28 17:56:30] : [INFO] : [C:\DEV\PYTHON\PycharmProjects\loggerLibrary\tests\test_logger.py:9] : test info;
-[2022-03-28 17:56:30] : [ERROR] : [C:\DEV\PYTHON\PycharmProjects\loggerLibrary\tests\test_logger.py:10] : test info;
+[2022-08-01 15:48:39,076] : [INFO] : [D:/DEV/PYTHON/automationLibs_logger/tests/test_logging.py:16] : test info;
+[2022-08-01 15:48:39,078] : [ERROR] : [D:/DEV/PYTHON/automationLibs_logger/tests/test_logging.py:17] : test error;
+[2022-08-01 15:48:39,078] : [WARNING] : [D:/DEV/PYTHON/automationLibs_logger/tests/test_logging.py:18] : test warning;
 ```
 
 #### Demo of Old Logger:
@@ -115,16 +158,26 @@ Result in Log File:
 
 ## How to Use
 1. In your settings.py, initialize the logger
-```python
-from common.settings import logger
 
-logger.info('test')
-logger.error('test')
+```python
+from loggerLibrary.logger import Logger
+import getpass
+
+LOG_NAME_ID = f'loggerLibrarytest_{getpass.getuser()}'
+LOG_DIR = f'C:\\my_project\\logs\\'
+logger = Logger(log_dir=LOG_DIR, log_id=LOG_NAME_ID).logger
 ```
 
 
 2. Import settings.py to your other files
 
+```python
+from common.settings import logger
+
+logger.info('test')
+logger.error('test')
+
+```
 ## Log Format
 For more log formats, check here: https://docs.python.org/3/library/logging.html#logrecord-attributes
 
