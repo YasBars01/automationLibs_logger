@@ -12,7 +12,7 @@ create boilerplate functions that will allow you to start coding immediately. He
 
 [1]:https://gitlab.com/yasmin.barrientos/automationLibs_logger
 
-# Installation and updating
+# Installation
 
 1. Use the package manager [pip](https://pip.pypa.io/en/stable/) to install automationLibs like below. Rerun this
    command to check for and install updates .
@@ -33,13 +33,7 @@ To install a specific branch
 pip install -e git+https://gitlab.com/yasmin.barrientos/automationLibs_logger.git@dev-ver01#egg=automationlibs-logger
 ```
 
-2. In your .ENV, add the full path where you would like the logs to be created(could be anywhere:
-```dotenv
-#*** automationLibs_logger ***#
-LOG_BASE_DIR="C:\\Users\\my_machine\\PycharmProjects\\my_project"
-```
-
-##_pip install is not working, what do I do?_
+## _pip install is not working, what do I do?
 1. Click the download link: https://gitlab.com/yasmin.barrientos/automationLibs_logger/-/archive/main/automationLibs_logger-main.zip to download the file
 
 2. Install using [pip](https://pip.pypa.io/en/stable/)
@@ -57,10 +51,18 @@ LOG_BASE_DIR="C:\\Users\\my_machine\\PycharmProjects\\my_project"
 Features:
 Install this package to use a pre-formatted logger
 
-##### Logger
+#### Logger
 
 * Logger(LOG_NAME_ID).logger
     * instantiates and creates the logger
+
+#### Setup
+
+1. In your .ENV, add the full path where you would like the logs to be created(could be anywhere):
+```dotenv
+#*** automationLibs_logger ***#
+LOG_BASE_DIR="C:\\Users\\my_machine\\PycharmProjects\\my_project"
+```
 
 #### Demo of logger:
 
