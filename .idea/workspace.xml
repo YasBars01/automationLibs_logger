@@ -4,21 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e99c441-9f8d-4ec9-917c-448f349a8d00" name="Changes" comment="* updated logger, added log_dir&#10;* updated README.md">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="4e99c441-9f8d-4ec9-917c-448f349a8d00" name="Changes" comment="ver 0.0.4&#10;* updated logger&#10;* added enable_stdout, default False. This will convert&#10;terminal log into stdout&#10;* logs will now be created on the log_dir instead of&#10;creating logs folder AFTER log_dir&#10;* log name is now based on &lt;log_id&gt;_&lt;YYYY-MM-DD&gt;.log &#10;From: &lt;log_id&gt;_log_&lt;YYYY-MM-DD&gt;.log">
+      <change afterPath="$PROJECT_DIR$/logs2/2022/October/loggerLibrarytest_barri_2022-10-06.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/automationLibs_logger.egg-info/PKG-INFO" beforeDir="false" afterPath="$PROJECT_DIR$/automationLibs_logger.egg-info/PKG-INFO" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/automationLibs_logger.egg-info/SOURCES.txt" beforeDir="false" afterPath="$PROJECT_DIR$/automationLibs_logger.egg-info/SOURCES.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/automationLibs_logger.egg-info/dependency_links.txt" beforeDir="false" afterPath="$PROJECT_DIR$/automationLibs_logger.egg-info/dependency_links.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/automationLibs_logger.egg-info/requires.txt" beforeDir="false" afterPath="$PROJECT_DIR$/automationLibs_logger.egg-info/requires.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/automationLibs_logger.egg-info/top_level.txt" beforeDir="false" afterPath="$PROJECT_DIR$/automationLibs_logger.egg-info/top_level.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/loggerLibrary/logger.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/loggerLibrary/logger.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/loggerLibrary/old_logger.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/loggerLibrary/old_logger.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/automationLibs_logger-0.0.3-py3-none-any.whl" beforeDir="false" afterPath="$PROJECT_DIR$/dist/automationLibs_logger-0.0.3-py3-none-any.whl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/automationLibs_logger-0.0.3.tar.gz" beforeDir="false" afterPath="$PROJECT_DIR$/dist/automationLibs_logger-0.0.3.tar.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/loggerLibrary/logger.py" beforeDir="false" afterPath="$PROJECT_DIR$/loggerLibrary/logger.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loggerLibrary/old_logger.py" beforeDir="false" afterPath="$PROJECT_DIR$/loggerLibrary/old_logger.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,8 +25,15 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="Yas Barrientos &lt;yasmin.barrientos@globe.com.ph&gt;" />
         <option value="yas-globe &lt;yasmin.barrientos@globe.com.ph&gt;" />
       </list>
+    </option>
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
     </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -95,7 +92,28 @@
       <recent name="D:\DEV\PYTHON\automationLibs_logger" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.test_logging">
+    <configuration name="settings" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="automationLibs_logger" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/common" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/common/settings.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="test_logging" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="automationLibs_logger" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -120,6 +138,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.test_logging" />
+        <item itemvalue="Python.settings" />
       </list>
     </recent_temporary>
   </component>
@@ -251,7 +270,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656317437500</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="ver 0.0.4&#10;* updated logger&#10;* added enable_stdout, default False. This will convert&#10;terminal log into stdout&#10;* logs will now be created on the log_dir instead of&#10;creating logs folder AFTER log_dir&#10;* log name is now based on &lt;log_id&gt;_&lt;YYYY-MM-DD&gt;.log &#10;From: &lt;log_id&gt;_log_&lt;YYYY-MM-DD&gt;.log">
+      <created>1659340690435</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1659340690435</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -267,6 +293,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="merged main and dev-ver01 using&#10;git pull origin main --allow-unrelated-histories" />
     <MESSAGE value="built the package using: &#10;python setup.py sdist bdist_wheel" />
@@ -281,14 +308,17 @@
     <MESSAGE value="* updated readme.md - updated installation instructions" />
     <MESSAGE value="* updated logger, added log_dir" />
     <MESSAGE value="* updated logger, added log_dir&#10;* updated README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="* updated logger, added log_dir&#10;* updated README.md" />
+    <MESSAGE value="ver 0.0.4&#10;* updated logger&#10;* added enable_stdout, default False. This will convert&#10;terminal log into stdout&#10;* logs will now be created on the log_dir instead of&#10;creating logs folder AFTER log_dir&#10;* log name is now based on &lt;log_id&gt;_&lt;YYYY-MM-DD&gt;.log &#10;From: &lt;log_id&gt;_log_&lt;YYYY-MM-DD&gt;.log" />
+    <option name="LAST_COMMIT_MESSAGE" value="ver 0.0.4&#10;* updated logger&#10;* added enable_stdout, default False. This will convert&#10;terminal log into stdout&#10;* logs will now be created on the log_dir instead of&#10;creating logs folder AFTER log_dir&#10;* log name is now based on &lt;log_id&gt;_&lt;YYYY-MM-DD&gt;.log &#10;From: &lt;log_id&gt;_log_&lt;YYYY-MM-DD&gt;.log" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/loggerLibrary/logger.py</url>
-          <line>43</line>
+          <line>52</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

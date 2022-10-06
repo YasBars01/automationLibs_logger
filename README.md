@@ -43,24 +43,57 @@ LOG_BASE_DIR="C:\\Users\\my_machine\\PycharmProjects\\my_project"
 1. Click the download link: https://gitlab.com/yasmin.barrientos/automationLibs_logger/-/archive/main/automationLibs_logger-main.zip to download the file
 
 2. Install using [pip](https://pip.pypa.io/en/stable/)
+
 ```bash
 pip install <full path to folder>automationLibs_logger-main.zip
 ```
+
 3. In your .ENV file, add the full path where you would like the logs to be created(could be anywhere:
+
 ```dotenv
 #*** automationLibs_logger ***#
 LOG_BASE_DIR="C:\\Users\\my_machine\\PycharmProjects\\my_project"
 ```
- 
+
+## Setup
+
+1. In your settings.py, initialize the logger
+
+```python
+from loggerLibrary.logger import Logger
+import getpass
+
+LOG_NAME_ID = f'loggerLibrarytest_{getpass.getuser()}'
+LOG_DIR = f'C:\\my_project\\logs\\'
+logger = Logger(log_dir=LOG_DIR, log_id=LOG_NAME_ID).logger
+```
+
+2. Import settings.py to your other files
+
+```python
+from common.settings import logger
+
+logger.info('test')
+logger.error('test')
+
+```
+
+## Log Format
+
+For more log formats, check here: https://docs.python.org/3/library/logging.html#logrecord-attributes
+
 ## Usage
 
 Features:
 Install this package to use a pre-formatted logger
 
-##### Logger
-
-* Logger(LOG_NAME_ID).logger
-    * instantiates and creates the logger
+|  Argument | Required  | Description  |
+|---|---|---|
+| log_dir  | Yes  | Location of the Logs folder  |
+| log_id  | Yes  | ID Name of the logger. This will be used as the name of the log file.  |
+| set_logger_name  | No  | Name of the logger. Used when you are trying to refer to a specific log  |
+| show_logger_id  | No  | If set to Yes, the log_id will be visible in the logs. Useful when using multiple logs  |
+| enable_stdout  | No  | Use stdout instead of logging to output logs. Enable when deploying to cloud to see logs  |
 
 #### Demo of logger:
 
@@ -77,8 +110,11 @@ logger.error('test error')
 logger.warning('test warning')
 ```
 
-File will be located in:
-`C:\my_project\logs\<year>\<month>\<LOG_NAME_ID>_<YYYY-MM-dd>.log`
+* File will be located in:
+  `C:\my_project\logs\<year>\<month>\<LOG_NAME_ID>_<YYYY-MM-dd>.log`
+
+* Logger(LOG_NAME_ID).logger
+    * instantiates and creates the logger
 
 e.g. `C:\my_project\logs\2022\August\loggerLibrarytest_barri_2022-08-01.log`
 
@@ -155,31 +191,6 @@ Result in Log File:
 [2022-03-28 17:56:30]: [INFO]: [C:\DEV\PYTHON\PycharmProjects\loggerLibrary\tests\test_logger.py:14] : test info;
 [2022-03-28 17:56:30]: [ERROR]: [C:\DEV\PYTHON\PycharmProjects\loggerLibrary\tests\test_logger.py:15] : test info;
 ```
-
-## How to Use
-1. In your settings.py, initialize the logger
-
-```python
-from loggerLibrary.logger import Logger
-import getpass
-
-LOG_NAME_ID = f'loggerLibrarytest_{getpass.getuser()}'
-LOG_DIR = f'C:\\my_project\\logs\\'
-logger = Logger(log_dir=LOG_DIR, log_id=LOG_NAME_ID).logger
-```
-
-
-2. Import settings.py to your other files
-
-```python
-from common.settings import logger
-
-logger.info('test')
-logger.error('test')
-
-```
-## Log Format
-For more log formats, check here: https://docs.python.org/3/library/logging.html#logrecord-attributes
 
 ## License
 

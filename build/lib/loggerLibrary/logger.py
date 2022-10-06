@@ -38,13 +38,24 @@ class Logger:
 
         logger_a.info("Hello")
         logger_b.info("Hi")
+
+        return
+        logger : logger object
+        log_dir str: params
     """
 
-    def __init__(self, log_dir, log_id, set_logger_name: bool = False, enable_stdout: bool = False) -> None:
+    def __init__(self,
+                 log_dir,
+                 log_id,
+                 set_logger_name: bool = False,
+                 show_logger_id: bool = False,
+                 enable_stdout: bool = False) -> None:
         self.base_dir = log_dir or os.environ.get('LOG_BASE_DIR') or os.path.dirname(
             os.path.dirname(os.path.abspath(__file__))) + '\\logs\\'
         self.log_id = log_id
         self.set_logger_name = set_logger_name
+        self.show_logger_id = show_logger_id
+        self.logger_name = ''
         self.LOG_DIR = os.path.join(self.base_dir, datetime.today().strftime('%Y'),
                                     datetime.today().strftime('%B'))
         self.with_milliseconds = True
@@ -65,18 +76,24 @@ class Logger:
         self.LOG_DIR = os.path.join(self.LOG_DIR,
                                     self.log_id + '_' + datetime.today().strftime('%Y-%m-%d') + '.log')
 
-        if self.set_logger_name:
+        if self.set_logger_name is not False:
             logger = logging.getLogger(self.log_id)
         else:
             logger = logging.getLogger(__name__)
+
+        if self.show_logger_id is not False:
+            self.logger_name = ' [%(name)-12s]:'
+
         logger.setLevel(logging.DEBUG)
 
         # log format: for more formats, check here: https://docs.python.org/3/library/logging.html#logrecord-attributes
         if self.with_milliseconds:
-            formatter = logging.Formatter('[%(asctime)s] : [%(levelname)s] : [%(pathname)s:%(lineno)d] : %(message)s;')
+            formatter = logging.Formatter(f'[%(asctime)s]:{self.logger_name} [%(levelname)s]: '
+                                          f'[%(pathname)s:%(lineno)d]: %(message)s;')
 
         else:
-            formatter = logging.Formatter('[%(asctime)s] : [%(levelname)s] : [%(pathname)s:%(lineno)d] : %(message)s;',
+            formatter = logging.Formatter(f'[%(asctime)s]:{self.logger_name} [%(levelname)s]: '
+                                          f'[%(pathname)s:%(lineno)d]: %(message)s;',
                                           '%Y-%m-%d %H:%M:%S')
 
         # create console handler, for console/terminal log
