@@ -12,7 +12,7 @@ create boilerplate functions that will allow you to start coding immediately. He
 
 [1]:https://gitlab.com/yasmin.barrientos/automationLibs_logger
 
-# Installation and updating
+# Installation
 
 1. Use the package manager [pip](https://pip.pypa.io/en/stable/) to install automationLibs like below. Rerun this
    command to check for and install updates .
@@ -33,13 +33,7 @@ To install a specific branch
 pip install -e git+https://gitlab.com/yasmin.barrientos/automationLibs_logger.git@dev-ver01#egg=automationlibs-logger
 ```
 
-2. In your .ENV, add the full path where you would like the logs to be created(could be anywhere:
-```dotenv
-#*** automationLibs_logger ***#
-LOG_BASE_DIR="C:\\Users\\my_machine\\PycharmProjects\\my_project"
-```
-
-##_pip install is not working, what do I do?_
+## _pip install is not working, what do I do?
 1. Click the download link: https://gitlab.com/yasmin.barrientos/automationLibs_logger/-/archive/main/automationLibs_logger-main.zip to download the file
 
 2. Install using [pip](https://pip.pypa.io/en/stable/)
@@ -191,6 +185,31 @@ Result in Log File:
 [2022-03-28 17:56:30]: [INFO]: [C:\DEV\PYTHON\PycharmProjects\loggerLibrary\tests\test_logger.py:14] : test info;
 [2022-03-28 17:56:30]: [ERROR]: [C:\DEV\PYTHON\PycharmProjects\loggerLibrary\tests\test_logger.py:15] : test info;
 ```
+
+## How to Use
+1. In your settings.py, initialize the logger
+
+```python
+from loggerLibrary.logger import Logger
+import getpass
+
+LOG_NAME_ID = f'loggerLibrarytest_{getpass.getuser()}'
+LOG_DIR = f'C:\\my_project\\logs\\'
+logger = Logger(log_dir=LOG_DIR, log_id=LOG_NAME_ID).logger
+```
+
+
+2. Import settings.py to your other files
+
+```python
+from common.settings import logger
+
+logger.info('test')
+logger.error('test')
+
+```
+## Log Format
+For more log formats, check here: https://docs.python.org/3/library/logging.html#logrecord-attributes
 
 ## License
 
